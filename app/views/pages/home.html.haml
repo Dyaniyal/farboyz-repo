@@ -1,0 +1,402 @@
+!!!
+/[if lt IE 7 ] <html class="ie ie6" lang="en">
+/[if IE 7 ] <html class="ie ie7" lang="en">
+/[if IE 8 ] <html class="ie ie8" lang="en">
+/ [if (gte IE 9)|!(IE)]><!
+%html{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    /[if IE]
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    %title AWESOME BOOTSTRAP TEMPLATE - BIWAS
+    / REQUIRED STYLE SHEETS
+    / BOOTSTRAP CORE STYLE CSS
+    %link{:href => "assets/css/bootstrap.css", :rel => "stylesheet"}/
+    / FONTAWESOME STYLE CSS
+    %link{:href => "assets/css/font-awesome.min.css", :rel => "stylesheet"}/
+    / ANIMATED FONTAWESOME STYLE CSS
+    %link{:href => "assets/css/font-awesome-animation.css", :rel => "stylesheet"}/
+    / VEGAS STYLE CSS
+    %link{:href => "assets/scripts/vegas/jquery.vegas.min.css", :rel => "stylesheet"}/
+    / SIDE MENU STYLE CSS
+    %link{:href => "assets/css/component.css", :rel => "stylesheet"}/
+    / CUSTOM STYLE CSS
+    %link{:href => "assets/css/style.css", :rel => "stylesheet"}/
+    / GOOGLE FONT
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  %body.cbp-spmenu-push
+    / MAIN HEADING
+    #main-sec.for-full-back.color-bg-one
+      .container
+        .row.text-center
+          .col-md-8.col-md-offset-2
+            %h1.pad-adjust
+              %i.fa.faa-pulse.animated>
+              Far Boyz Travels
+    / END MAIN HEADING
+    / LEFT SLIDE MENU
+    %nav#cbp-spmenu-s1.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left
+      %h3 BIWAS
+      %a{:href => "#"} Call: +01-099-908-908
+      %a{:href => "#main-sec"}
+        %i.fa.fa-home.fa-3x>
+        HOME
+      %a{:href => "#about-sec"}
+        %i.fa.fa-microphone.fa-3x>
+        ABOUT
+      %a{:href => "#price-sec"}
+        %i.fa.fa-dollar.fa-3x>
+        PRICING
+      %a{:href => "#services-sec"}
+        %i.fa.fa-rocket.fa-3x>
+        SERVICES
+      %a{:href => "#contact-sec"}
+        %i.fa.fa-globe.fa-3x>
+        CONTACT
+    #icon-left.row
+      .col-md-12
+        %i#showLeftPush.fa.fa-cut.fa-4x.faa-horizontal.animated
+    / END LEFT SLIDE MENU
+    / RIGHT SLIDE MENU
+    %nav#cbp-spmenu-s2.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-right
+      %h3 SOCIAL
+      %a{:href => "#"} MY SOCIAL PRESENCE
+      %a{:href => "facebook", target: '_blank'}
+        %i.fa.fa-facebook.fa-3x>
+        Facebook
+      %a{:href => "twitter", target: '_blank'}
+        %i.fa.fa-twitter.fa-3x>
+        Twitter
+      %a{:href => "#", target: '_blank'}
+        %i.fa.fa-linkedin.fa-3x>
+        Linked In
+      %a{:href => "gmail", target: '_blank'}
+        %i.fa.fa-google-plus.fa-3x>
+        Google Plus
+    #icon-right.row
+      .col-md-12
+        %i#showRightPush.fa.fa-paperclip.fa-4x
+    / END RIGHT SLIDE MENU
+    / HOME SECTION
+    #home.container
+      .row.text-center
+        .col-md-12
+          %span.head-main Travelling Made Easy
+          %h2.head-sub-main For Domestic and International Travelling
+          %h3.head-last any client content
+          %a.btn.btn-danger.btn-lg.head-btn-one{:href => "#about-sec"} Find section 1
+           
+          %a.btn.btn-primary.btn-lg{:href => "#about-sec"} Find section 2
+    / END HOME SECTION
+    / ABOUT SECTION
+    %section#about-sec.for-full-back.color-bg-one
+      .container
+        .row.text-center
+          .col-md-8.col-md-offset-2
+            %h1
+              %i.fa.fa-microphone.faa-pulse.animated>
+              About
+          .row.text-center
+            .col-md-8.col-md-offset-2
+              %h4
+                %strong
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    %section#about-team.for-full-back.color-white
+      .container
+        .row.text-center.g-pad-bottom
+          .col-md-8.col-md-offset-2
+            %h3 OUR TEAM PROFILE
+            %h4
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+        .row.text-center.g-pad-bottom
+          .col-md-12
+            .col-md-3.col-sm-3.col-xs-6
+              .team-member
+                %img{:alt => "", :src => "assets/img/team/1.png"}/
+                %h3
+                  %strong ANDREWA ALEX
+            .col-md-3.col-sm-3.col-xs-6
+              .team-member
+                %img{:alt => "", :src => "assets/img/team/2.png"}/
+                %h3
+                  %strong ROMILIA JHON
+            .col-md-3.col-sm-3.col-xs-6
+              .team-member
+                %img{:alt => "", :src => "assets/img/team/3.png"}/
+                %h3
+                  %strong TINA WAY LEU
+            .col-md-3.col-sm-3.col-xs-6
+              .team-member
+                %img{:alt => "", :src => "assets/img/team/4.png"}/
+                %h3
+                  %strong JHON DEO ALEX
+        .row.g-pad-bottom
+          .col-md-6
+            %h3 Lorem ipsum  dolor sit amet
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+              Lorem ipsum dolor sit amet, consectetur nec nisl odio
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+          .col-md-6
+            %h3 Lorem ipsum  dolor sit amet
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+              Lorem ipsum dolor sit amet, consectetur nec nisl odio
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    / END ABOUT SECTION
+    / PRICE SECTION
+    %section#price-sec
+      .container
+        .row.text-center
+          .col-md-12
+            .col-md-3
+              %ul.plan
+                %li.plan-head.c-b BASIC PLAN
+                %li.main-price $99 only
+                %li
+                  %strong 12
+                  Accounts
+                %li
+                  %strong 52
+                  Emails
+                %li
+                  %strong 50 GB
+                  Space
+                %li
+                  %strong Free
+                  Support
+                %li.bottom
+                  %a.btn.btn-danger{:href => "#"} Read More
+            .col-md-3
+              %ul.plan
+                %li.plan-head SIMPLE PLAN
+                %li.main-price $199 only
+                %li
+                  %strong 12
+                  Accounts
+                %li
+                  %strong 52
+                  Emails
+                %li
+                  %strong 50 GB
+                  Space
+                %li
+                  %strong Free
+                  Support
+                %li.bottom
+                  %a.btn.btn-primary{:href => "#"} Read More
+            .col-md-3
+              %ul.plan
+                %li.plan-head.c-v VALUE PLAN
+                %li.main-price $299 only
+                %li
+                  %strong 12
+                  Accounts
+                %li
+                  %strong 52
+                  Emails
+                %li
+                  %strong 50 GB
+                  Space
+                %li
+                  %strong Free
+                  Support
+                %li.bottom
+                  %a.btn.btn-success{:href => "#"} Read More
+            .col-md-3
+              %ul.plan
+                %li.plan-head.c-a ADVANCE PLAN
+                %li.main-price $399 only
+                %li
+                  %strong 12
+                  Accounts
+                %li
+                  %strong 52
+                  Emails
+                %li
+                  %strong 50 GB
+                  Space
+                %li
+                  %strong Free
+                  Support
+                %li.bottom
+                  %a.btn.btn-default{:href => "#"} Read More
+    / END PRICE SECTION
+    / SERVICES SECTION
+    %section#services-sec.for-full-back.color-bg-one
+      .container
+        .row.text-center
+          .col-md-8.col-md-offset-2
+            %h1
+              %i.fa.fa-rocket.faa-pulse.animated>
+              Services
+          .row.text-center
+            .col-md-8.col-md-offset-2
+              %h4
+                %strong
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    %section#services-inner.for-full-back.color-white
+      .container
+        .row.text-center
+          .col-md-12
+            .col-md-3
+              .service-div
+                %i.fa.fa-desktop.fa-5x.faa-vertical.animated
+                %h4 Sure Quique Menu
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            .col-md-3
+              .service-div
+                %i.fa.fa-flask.fa-5x.faa-ring.animated
+                %h4 100% Free Responsive
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            .col-md-3
+              .service-div
+                %i.fa.fa-plus.fa-5x.faa-float.animated
+                %h4 Well Documented
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            .col-md-3
+              .service-div
+                %i.fa.fa-credit-card.fa-5x.faa-shake.animated
+                %h4 Clean &amp; Customizable
+                %p
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    / END SERVICES SECTION
+    / STATS SECTION
+    %section
+      .container
+        .row
+          .col-md-3
+            .stats-div
+              %h3 5000+
+              %h4 Projects
+          .col-md-3
+            .stats-div
+              %h3 205+
+              %h4 Countries
+          .col-md-3
+            .stats-div
+              %h3 1300+
+              %h4 Offices
+          .col-md-3
+            .stats-div
+              %h3 2400+
+              %h4 Clients
+    / END STATS SECTION
+    / CONTACT SECTION
+    %section#contact-sec.for-full-back.color-bg-one
+      .container
+        .row.text-center
+          .col-md-8.col-md-offset-2
+            %h1
+              %i.fa.fa-globe.faa-pulse.animated>
+              Contact
+          .row.text-center
+            .col-md-8.col-md-offset-2
+              %h4
+                %strong
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+    %section#contact-inner.for-full-back.color-white
+      .container
+        .row
+          .col-md-5.contact-cls
+            %h2 GET IN TOUCH
+            %div
+              %span
+                %i.fa.fa-home>
+                Address: New Your City
+              %br/
+              %span
+                %i.fa.fa-phone>
+                Phone: 82-230-567-899
+              %br/
+              %span
+                %i.fa.fa-envelope-o>
+                indo@yourdomain.com
+              %br/
+              %span
+                %i.fa.fa-globe>
+                www.yourdomain.com
+              %br/
+          .col-md-7
+            %h2 Lorem ipsum dolor sit amet
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+            %form
+              .row
+                .col-md-6.col-sm-6
+                  .form-group
+                    %input.form-control{:placeholder => "Name", :required => "required", :type => "text"}/
+                .col-md-6.col-sm-6
+                  .form-group
+                    %input.form-control{:placeholder => "Email address", :required => "required", :type => "text"}/
+              .row
+                .col-md-12.col-sm-12
+                  .form-group
+                    %textarea#message.form-control{:name => "message", :placeholder => "Message", :required => "required", :rows => "3"}
+                  .form-group
+                    %button.btn.btn-default{:type => "submit"} Submit Request
+    / END CONTACT SECTION
+    / SOCIAL STATS SECTION
+    %section
+      .container
+        .row.g-pad-bottom
+          .col-md-3
+            .social-stats-div
+              %i.fa.fa-facebook.fa-5x
+              %h3 2000+ Followers
+          .col-md-3
+            .social-stats-div
+              %i.fa.fa-twitter.fa-5x
+              %h3 1900+ Tweets
+          .col-md-3
+            .social-stats-div
+              %i.fa.fa-google-plus.fa-5x
+              %h3 1530+ Followers
+          .col-md-3
+            .social-stats-div
+              %i.fa.fa-linkedin.fa-5x
+              %h3 3000+ Connections
+    / END SOCIAL STATS SECTION
+    / FOOTER SECTION
+    #footer.for-full-back.color-bg-one
+      2014 www.yourdomain.com | All Right Reserved | Terms | Policies | Licenses
+    / END FOOTER SECTION
+    / JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME
+    / CORE JQUERY
+    %script{:src => "assets/plugins/jquery-1.10.2.js"}
+    / BOOTSTRAP CORE SCRIPT
+    %script{:src => "assets/plugins/bootstrap.js"}
+    / SIDE MENU SCRIPTS
+    %script{:src => "assets/js/modernizr.custom.js"}
+    %script{:src => "assets/js/classie.js"}
+    / VEGAS SLIDESHOW SCRIPTS
+    %script{:src => "assets/plugins/vegas/jquery.vegas.min.js"}
+    / CUSTOM SCRIPTS
+    %script{:src => "assets/js/custom.js"}
