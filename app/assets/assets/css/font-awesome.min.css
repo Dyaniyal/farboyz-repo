@@ -121,7 +121,7 @@
 
 @-o-keyframes spin {
     0% {
-        -o-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
     }
 
     100% {
